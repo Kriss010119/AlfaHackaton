@@ -1,0 +1,345 @@
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 100%;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  width: 100%;
+  padding: 100px 20px 80px;
+  text-align: center;
+  background: var(--color-logo-bg);
+  border-radius: 30px;
+  border-bottom: 1px solid var(--color-border);
+  box-sizing: border-box;
+}
+
+.heroIcon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  color: #fff;
+  filter: drop-shadow(0 0 8px var(--color-shadow-red));
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin: 0 0 16px;
+  background: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.featuresSection {
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+}
+
+.featuresContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.featuresTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 60px;
+  color: var(--color-text-primary);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+.featureCard {
+  background: var(--color-feature-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px var(--color-shadow);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px var(--color-shadow);
+  border-color: var(--color-active);
+}
+
+.featureIcon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  background: var(--color-bg-hover);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-active);
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: var(--color-text-primary);
+}
+
+.featureDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.uploadSection {
+  width: 100%;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.uploadSection.dragOver {
+  background: var(--color-bg-active);
+  border-color: var(--color-active);
+}
+
+.uploadContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--color-bg-card);
+  border: 2px dashed var(--color-border);
+  border-radius: 20px;
+  padding: 60px 40px;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.uploadSection.dragOver .uploadContainer {
+  border-color: var(--color-active);
+  background: var(--color-bg-hover);
+  transform: scale(1.02);
+}
+
+.uploadIcon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  color: var(--color-active);
+}
+
+.uploadTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 16px;
+  color: var(--color-text-primary);
+}
+
+.uploadDescription {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0 0 32px;
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadButton {
+  background: var(--color-button);
+  color: var(--color-button-text);
+  border: none;
+  border-radius: 12px;
+  padding: 16px 32px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+}
+
+.uploadButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--color-shadow-green);
+}
+
+.fileInfo {
+  background: var(--color-fileInfo);
+  border: 1px solid var(--color-border);
+  color: var(--color-button-text);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 24px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fileName {
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.fileSize {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.processButton {
+  background: var(--color-button);
+  color: var(--color-button-text);
+  border: none;
+  border-radius: 12px;
+  padding: 16px 32px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.processButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--color-shadow-green);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  color: var(--color-text-secondary);
+  width: 100%;
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid var(--color-border);
+  border-top: 2px solid var(--color-active);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.resultsSection {
+  width: 100%;
+  padding: 80px 20px;
+  background-color: var(--color-bg-card);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.resultsContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: 0 4px 6px var(--color-shadow);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.resultsTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 16px;
+  color: var(--color-text-primary);
+}
+
+.resultsDescription {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0 0 32px;
+}
+
+.downloadButton {
+  background: var(--color-button);
+  color: var(--color-button-text);
+  border: none;
+  border-radius: 12px;
+  padding: 16px 32px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.downloadButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--color-shadow-green);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 20px 60px;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.125rem;
+  }
+  
+  .featuresTitle {
+    font-size: 2rem;
+  }
+  
+  .features {
+    grid-template-columns: 1fr;
+  }
+  
+  .uploadContainer,
+  .resultsContainer {
+    padding: 40px 20px;
+  }
+  
+  .app-content {
+    padding: 10px;
+  }
+}
